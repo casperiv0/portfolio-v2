@@ -117,7 +117,7 @@
   border-radius: 50%;
   background-color: #848892;
 }
-
+ 
 @media (min-width: 768px) {
   .line {
     left: 50%;

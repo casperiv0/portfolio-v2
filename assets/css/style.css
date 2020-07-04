@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* -webkit-overflow-scrolling: touch; */
 }
 
 body {
@@ -288,16 +289,18 @@ textarea:focus {
   border-top: 1px solid #232535;
   height: 200px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
 .footer-icon img {
   width: 70px;
   height: 70px;
+  display: none;
 }
 
 .footer-links {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -320,6 +323,7 @@ textarea:focus {
 }
 
 .footer-center {
+  margin-top: 20px;
   color: #bbbbbb;
 }
 
@@ -370,6 +374,23 @@ textarea:focus {
   .skills-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .project {
+    height: 320px;
+  }
+
+  .project .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project .project-btn {
+    margin-bottom: 5px;
+  }
+
+  .footer {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -404,6 +425,15 @@ textarea:focus {
 
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer img {
+    display: block;
   }
 }
 
