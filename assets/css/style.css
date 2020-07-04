@@ -45,7 +45,7 @@ textarea:focus {
 /* Menu */
 .menu {
   position: absolute;
-  top: -100%;
+  top: -100vh;
   left: 0;
   right: 0;
   bottom: 0;
@@ -319,6 +319,14 @@ textarea:focus {
   height: 1.5rem;
 }
 
+.footer-center {
+  color: #bbbbbb;
+}
+
+.footer-center a {
+  color: #dddddd;
+}
+
 /* Media Queries */
 @media (hover: hover) {
   .nav-link:hover {
@@ -436,4 +444,3 @@ textarea:focus {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
