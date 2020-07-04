@@ -25,3 +25,4 @@ menuLinks.forEach((link) => {
 function closeMenu() {
     menu.classList.remove("active")
 }
+window.__forceSmoothScrollPolyfill__ = true;
