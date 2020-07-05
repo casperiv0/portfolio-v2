@@ -36,6 +36,11 @@ body {
   font-family: sans-serif;
 }
 
+body.no-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 a:focus,
 button:focus,
 input:focus,
@@ -91,6 +96,8 @@ textarea:focus {
   top: 3%;
   right: 3%;
   transform: translate(-3%, -3%);
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -131,6 +138,12 @@ textarea:focus {
   font-size: var(--nav-link-fs);
   transition: color 0.3s;
   display: none;
+}
+
+.open-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .open-menu img {
