@@ -238,14 +238,16 @@ textarea:focus {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.skill-box h2 {
-  color: #dddddd;
+.skill {
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
   font-weight: bold;
 }
 
-.skill-box > div {
-  margin-top: 5px;
-  color: #bbbbbb;
+.skill img {
+  margin-bottom: 10px;
+  max-width: 100px;
 }
 
 /* Project section */
@@ -393,7 +395,11 @@ textarea:focus {
   }
 
   .skills-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill img {
+    max-width: 80px;
   }
 
   .project {
@@ -486,12 +492,19 @@ textarea:focus {
     padding: 10px 20px;
   }
 
+  .skills-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   .projects-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1700px) {
+  .skills-container {
+    grid-template-columns: repeat(8, 1fr);
+  }
   .projects-container {
     grid-template-columns: repeat(4, 1fr);
   }

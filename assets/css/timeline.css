@@ -104,7 +104,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #848892;
+  background-color: #44465c;
 }
 
 .timeline-item.right::after {
@@ -115,7 +115,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #848892;
+  background-color: #44465c;
 }
  
 @media (min-width: 768px) {
@@ -157,6 +157,6 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #848892;
+    background-color: #44465c;
   }
 }
