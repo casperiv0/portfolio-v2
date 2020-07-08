@@ -1,5 +1,8 @@
+.timeline-section {
+  margin-top: 3rem;
+}
+
 .timeline {
-  margin-top: 2rem;
   margin: 0 auto;
   position: relative;
   max-width: 1200px;

@@ -48,6 +48,10 @@ textarea:focus {
   outline: 2px dotted #bbbbbb;
 }
 
+a {
+  color: #e2b0b0;
+}
+
 .section-title {
   margin-top: 10px;
   font-size: var(--section-title-fs);
@@ -381,10 +385,6 @@ textarea:focus {
 
   .project .project-btn:hover {
     opacity: 0.9;
-  }
-
-  .footer-link:hover {
-    border-bottom: 2px solid #bbbbbb;
   }
 
   .nav-icon img:hover {

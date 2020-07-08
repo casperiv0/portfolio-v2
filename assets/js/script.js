@@ -1,4 +1,5 @@
 const menu = document.querySelector(".menu");
+const navIcon = document.querySelector(".nav-icon")
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
 const menuLinks = document.querySelectorAll(".menu-link");
