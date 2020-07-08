@@ -2,12 +2,13 @@
   margin-top: 2rem;
   margin: 0 auto;
   position: relative;
+  max-width: 1200px;
 }
 
 .timeline::after {
   content: '';
   position: absolute;
-  top: 80px;
+  top: 0;
   bottom: 0;
   width: 6px;
   background: #44465C;
