@@ -177,6 +177,11 @@ textarea:focus {
   align-items: center;
 }
 
+.fade-down {
+  animation: fadeDown 1s;
+  -moz-animation: fadeDown 1s;
+}
+
 .btn {
   border: 1px solid transparent;
   padding: 10px 20px;
@@ -529,6 +534,8 @@ textarea:focus {
   background-color: #232535;
 }
 
+
+/* Animations */
 @keyframes jump {
   0% {
     transform: scale(0) translateY(0);
@@ -538,5 +545,18 @@ textarea:focus {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -moz-transform: translateY(0);
   }
 }
