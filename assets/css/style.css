@@ -534,7 +534,6 @@ a {
   background-color: #232535;
 }
 
-
 /* Animations */
 @keyframes jump {
   0% {
@@ -558,5 +557,16 @@ a {
     opacity: 1;
     transform: translateY(0);
     -moz-transform: translateY(0);
+  }
+}
+
+.rotate {
+  animation: rotate 2s ease;
+  -moz-animation: rotate 2s ease;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
 }

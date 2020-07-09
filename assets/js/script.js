@@ -1,5 +1,5 @@
 const menu = document.querySelector(".menu");
-const navIcon = document.querySelector(".nav-icon")
+const footerIcon = document.querySelector(".footer-icon")
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
 const menuLinks = document.querySelectorAll(".menu-link");
@@ -27,3 +27,11 @@ function closeMenu() {
 const ageDiv = document.getElementById("age");
 const currentAge = new Date().getFullYear() - 2005;
 ageDiv.innerText = currentAge;
+
+footerIcon.addEventListener("click", () => {
+    document.body.classList.add("rotate")
+
+    setTimeout(() => {
+        document.body.classList.remove("rotate")
+    }, 4000)
+})
