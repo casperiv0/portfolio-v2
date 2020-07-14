@@ -129,6 +129,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--bg);
 }
 
 .nav-icon img {
@@ -144,6 +145,19 @@ a {
   font-size: var(--nav-link-fs);
   transition: color 0.3s;
   display: none;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.link-line::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
 }
 
 .open-menu {
@@ -276,7 +290,7 @@ a {
 .project {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 250px;
   padding: 20px;
   background-color: #232535;
 }
@@ -292,8 +306,8 @@ a {
 
 .project .btn-container {
   position: absolute;
-  bottom: 7%;
-  transform: translateY(-7%);
+  bottom: 10%;
+  transform: translateY(-10%);
 }
 
 .project .project-btn {
@@ -344,16 +358,13 @@ a {
   justify-content: space-between;
   align-items: center;
   color: #bbbbbb;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: border 0.3s;
-}
-
-.footer-link img {
-  margin-right: 10px;
-  width: 1.5rem;
-  height: 1.5rem;
+  position: relative;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .footer-center {
@@ -362,6 +373,7 @@ a {
 }
 
 .footer-center a {
+  transition: color 0.3s;
   color: #dddddd;
 }
 
@@ -369,6 +381,10 @@ a {
 @media (hover: hover) {
   .nav-link:hover {
     color: white;
+  }
+
+  .link-line:hover::before {
+    width: 100%;
   }
 
   .btn-container .btn:first-child:hover {
@@ -392,6 +408,14 @@ a {
   .nav-icon img:hover {
     transform: rotate(360deg);
   }
+
+  .footer-link:hover {
+    color: white;
+  }
+
+  .footer-center a:hover {
+    color: white;
+  }
 }
 
 @media (max-width: 320px) {
@@ -410,7 +434,7 @@ a {
   }
 
   .project {
-    height: 320px;
+    height: 250px;
   }
 
   .project .btn-container {
@@ -445,8 +469,8 @@ a {
   }
 
   .socials img {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .container > div {
