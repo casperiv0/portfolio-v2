@@ -4,8 +4,9 @@
   --main-p-fs: 1rem;
   --main-h1-fs: 3rem;
   --btn-fs: 1rem;
-  --section-title-fs: 1.5rem;
+  --section-title-fs: 2rem;
   --about-p-fs: 1.2rem;
+  --content-width: 90%;
 }
 
 *,
@@ -16,6 +17,12 @@
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+::selection {
+  color: var(--bg);
+  background-color: white;
 }
 
 html {
@@ -64,7 +71,7 @@ a {
 
 /* Menu */
 .menu {
-  position: absolute;
+  position: fixed;
   top: -100vh;
   left: 0;
   right: 0;
@@ -120,16 +127,28 @@ a {
 }
 
 .container > div {
-  width: 90%;
+  width: var(--content-width);
 }
 
 .nav-bar {
+  position: fixed;
+  z-index: 90;
+  top:0;
   width: 100%;
   height: 100px;
+  left: 0;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.nav-content {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg);
+  width: var(--content-width);
 }
 
 .nav-icon img {
@@ -175,7 +194,7 @@ a {
   position: relative;
   height: calc(100vh - 200px);
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .main p {
@@ -351,6 +370,7 @@ a {
 }
 
 .form-input {
+  border-radius: 0;
   padding: 10px;
   min-width: 100%;
   max-width: 100%;
@@ -522,6 +542,7 @@ a {
     --main-h1-fs: 4rem;
     --nav-link-fs: 1.5rem;
     --section-title-fs: 3rem;
+    --content-width: 80%;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -536,10 +557,6 @@ a {
   .socials img {
     width: 2rem;
     height: 2rem;
-  }
-
-  .container > div {
-    width: 80%;
   }
 
   .skills-container {

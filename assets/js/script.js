@@ -9,6 +9,18 @@ const footerIcon = document.querySelector(".footer-icon");
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
 const menuLinks = document.querySelectorAll(".menu-link");
+const navbar = document.getElementById("nav-bar");
+const sticky = navbar.offsetTop;
+
+window.onscroll = function shiftNav() {
+  if (window.pageYOffset > sticky) {
+    navbar.style.boxShadow = "0 2px 2px rgba(0, 0, 0, 0.2)";
+    navbar.style.height = "60px";
+  } else {
+    navbar.style.boxShadow = "none";
+    navbar.style.height = "100px";
+  }
+};
 
 openMenuBtn.addEventListener("click", () => {
   document.body.classList.add("no-scroll");
@@ -30,18 +42,6 @@ function closeMenu() {
   document.body.classList.remove("no-scroll");
 }
 
-const ageDiv = document.getElementById("age");
-const currentAge = new Date().getFullYear() - 2005;
-ageDiv.innerText = currentAge;
-
-footerIcon.addEventListener("click", () => {
-  document.body.classList.add("rotate");
-
-  setTimeout(() => {
-    document.body.classList.remove("rotate");
-  }, 4000);
-});
-
 // contact form
 const contactForm = document.getElementById("contact-form");
 
@@ -62,3 +62,17 @@ contactForm.addEventListener("submit", (e) => {
       }
     });
 });
+
+// footer
+footerIcon.addEventListener("click", () => {
+  document.body.classList.add("rotate");
+
+  setTimeout(() => {
+    document.body.classList.remove("rotate");
+  }, 4000);
+});
+
+// age
+const ageDiv = document.getElementById("age");
+const currentAge = new Date().getFullYear() - 2005;
+ageDiv.innerText = currentAge;

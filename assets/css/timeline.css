@@ -31,7 +31,7 @@
 }
 
 .timeline-item::after {
-  z-index: 100;
+  z-index: 80;
   content: '';
   position: absolute;
   top: 50%;
@@ -127,7 +127,7 @@
   .left::after,
   .right::after {
     left: 19px;
-    z-index: 100;
+    z-index: 80;
   }
 
   .right {
