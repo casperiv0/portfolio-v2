@@ -52,11 +52,11 @@
         <img src="./assets/img/close.svg" alt="Close Menu" />
       </button>
       <div class="menu-links">
-        <a href="#skills" class="menu-link">Skills</a>
-        <a href="#projects" class="menu-link">Projects</a>
-        <a href="#about" class="menu-link">About</a>
-        <a href="#timeline" class="menu-link">Timeline</a>
-        <a href="#contact" class="menu-link">Contact</a>
+        <a href="#skills-section" class="menu-link">Skills</a>
+        <a href="#projects-section" class="menu-link">Projects</a>
+        <a href="#about-section" class="menu-link">About</a>
+        <a href="#timeline-section" class="menu-link">Timeline</a>
+        <a href="#contact-section" class="menu-link">Contact</a>
       </div>
     </aside>
 
@@ -73,11 +73,11 @@
               <button class="open-menu">
                 <img src="./assets/img/menu.svg" alt="menu" />
               </button>
-              <a href="#skills" class="nav-link link-line">Skills</a>
-              <a href="#projects" class="nav-link link-line">Projects</a>
-              <a href="#about" class="nav-link link-line">About</a>
-              <a href="#timeline" class="nav-link link-line">Timeline</a>
-              <a href="#contact" class="nav-link link-line">Contact</a>
+              <a data-page='skills-section' href="#skills-section" class="nav-link link-line">Skills</a>
+              <a data-page='projects-section' href="#projects-section" class="nav-link link-line">Projects</a>
+              <a data-page='about-section' href="#about-section" class="nav-link link-line">About</a>
+              <a data-page='timeline-section' href="#timeline-section" class="nav-link link-line">Timeline</a>
+              <a data-page='contact-section' href="#contact-section" class="nav-link link-line">Contact</a>
             </div>
           </div>
         </nav>
@@ -90,8 +90,8 @@
               Web Developer
             </h1>
             <div class="btn-container">
-              <a class="btn" href="#projects">Projects</a>
-              <a class="btn" href="#contact">Contact</a>
+              <a class="btn" href="#projects-section">Projects</a>
+              <a class="btn" href="#contact-section">Contact</a>
             </div>
           </div>
           <a href="#skills" class="scroll-down">
@@ -117,7 +117,7 @@
           </div>
         </main>
 
-        <section class="skills" id="skills">
+        <section class="skills section" id="skills-section">
           <h1 class="section-title">My Backpack</h1>
           <div class="skills-container">
             <div class="skill">
@@ -167,7 +167,7 @@
           </div>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="section projects" id="projects-section">
           <h1 class="section-title">Projects</h1>
 
           <div class="projects-container">
@@ -312,7 +312,7 @@
           </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="section about" id="about-section">
           <h1 class="section-title">About Me</h1>
           <p>
             Hello, I'm Casper! I am a <span id="age"></span>y/o programmer and
@@ -324,7 +324,7 @@
           </p>
         </section>
 
-        <section class="timeline-section" id="timeline">
+        <section class="section timeline-section" id="timeline-section">
           <h1 class="section-title">Experience Timeline</h1>
           <div class="timeline">
             <div class="timeline-item left">
@@ -393,7 +393,7 @@
           </div>
         </section>
 
-        <section class="contact-section" id="contact">
+        <section class="section contact-section" id="contact-section">
           <h1 class="section-title">Contact me</h1>
           <form id="contact-form">
             <div id="msg"></div>

@@ -9,8 +9,30 @@ const footerIcon = document.querySelector(".footer-icon");
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
 const menuLinks = document.querySelectorAll(".menu-link");
+const sections = document.querySelectorAll(".section");
 const navbar = document.getElementById("nav-bar");
 const sticky = navbar.offsetTop;
+const observer = new IntersectionObserver(callback, {
+  threshold: 0.5,
+  rootMargin: "0px",
+});
+
+function callback(entries) {
+  entries.forEach((entry) => {
+    const id = entry.target.id;
+    const link = document.querySelector(`[data-page=${id}]`);
+
+    if (entry.isIntersecting) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
 
 window.onscroll = function shiftNav() {
   if (window.pageYOffset > sticky) {

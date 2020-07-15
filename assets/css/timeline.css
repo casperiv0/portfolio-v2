@@ -109,24 +109,24 @@
 
 @media screen and (max-width: 768px) {
   .timeline::after {
-    left: 31px;
+    left: 20px;
   }
 
   .timeline-item {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 55px;
+    padding-right: 0px;
   }
 
   .timeline-item::before {
-    left: 60px;
+    left: 45px;
     border-width: 10px 10px 10px 0;
     border-color: transparent #232535 transparent transparent;
   }
 
   .left::after,
   .right::after {
-    left: 19px;
+    left: 8px;
     z-index: 80;
   }
 

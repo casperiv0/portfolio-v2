@@ -133,7 +133,7 @@ a {
 .nav-bar {
   position: fixed;
   z-index: 90;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100px;
   left: 0;
@@ -166,6 +166,21 @@ a {
   display: none;
   position: relative;
   padding-bottom: 3px;
+}
+
+.nav-link.active {
+  color: white;
+}
+
+.nav-link.active::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
 }
 
 .link-line::before {
@@ -292,6 +307,7 @@ a {
 
 /* Project section */
 .projects {
+  position: relative;
   margin-top: 2rem;
 }
 
@@ -532,6 +548,16 @@ a {
   }
 }
 
+@media (min-width: 830px) {
+  .nav-link {
+    display: inline-flex;
+  }
+
+  .open-menu {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   :root {
     --main-p-fs: 1.8rem;
@@ -540,14 +566,6 @@ a {
     --section-title-fs: 3rem;
     --content-width: 80%;
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .nav-link {
-    display: inline-flex;
-  }
-
-  .open-menu {
-    display: none;
   }
 
   .socials img {
