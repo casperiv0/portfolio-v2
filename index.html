@@ -36,6 +36,15 @@
     />
     <link rel="apple-touch-icon" href="./assets/img/Icon.png" />
     <link rel="manifest" href="./assets/manifest.json" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_Or9iwt5Bgj2Fni5v6yjLW");
+      })();
+    </script>
   </head>
   <body>
     <aside class="menu" id="menu">
@@ -44,11 +53,7 @@
       </button>
       <div class="menu-links">
         <a href="#projects" class="menu-link">Projects</a>
-        <a
-          href="mailto:casper.iversen2@gmail.com?subject=Hello!"
-          class="menu-link"
-          >Contact</a
-        >
+        <a href="#contact" class="menu-link">Contact</a>
         <a href="#about" class="menu-link">About</a>
         <a href="#timeline" class="menu-link">Timeline</a>
       </div>
@@ -64,13 +69,7 @@
             <button class="open-menu">
               <img src="./assets/img/menu.svg" alt="menu" />
             </button>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="mailto:casper.iversen2@gmail.com?subject=hello!"
-              class="nav-link link-line"
-              >Contact</a
-            >
+            <a href="#contact" class="nav-link link-line">Contact</a>
             <a href="#projects" class="nav-link link-line">Projects</a>
             <a href="#about" class="nav-link link-line">About</a>
             <a href="#timeline" class="nav-link link-line">Timeline</a>
@@ -86,13 +85,7 @@
             </h1>
             <div class="btn-container">
               <a class="btn" href="#projects">Projects</a>
-              <a
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="mailto:casper.iversen2@gmail.com?subject=hello!"
-                >Contact</a
-              >
+              <a class="btn" href="#contact">Contact</a>
             </div>
           </div>
           <a href="#skills" class="scroll-down">
@@ -394,6 +387,51 @@
           </div>
         </section>
 
+        <section class="contact-section" id="contact">
+          <h1 class="section-title">Contact me</h1>
+          <form id="contact-form">
+            <div id="msg"></div>
+            <div class="form-group">
+              <label for="from_name">Enter Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="from_name"
+                id="from_name"
+                placeholder="Name.."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Enter Email</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email.."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Enter Message</label>
+              <textarea
+                class="form-input"
+                rows="5"
+                type="text"
+                name="message"
+                id="message"
+                placeholder="Message.."
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <a class="form-other" href="mailto:casper.iversen2@gmail.com">send me an email directly</a>
+              <button class="submit-btn" type="submit">Submit</button>
+            </div>
+          </form>
+        </section>
+
         <footer class="footer">
           <div class="footer-icon">
             <img src="./assets/img/Icon.png" alt="icon" />
@@ -424,7 +462,7 @@
       </div>
     </div>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll-min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll-min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
