@@ -17,7 +17,6 @@
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-  scroll-padding-top: 65px;
 }
 
 ::selection {
@@ -62,6 +61,7 @@ a {
 }
 
 .section-title {
+  padding-top: 65px;
   margin-top: 10px;
   font-size: var(--section-title-fs);
   color: #bbbbbb;
