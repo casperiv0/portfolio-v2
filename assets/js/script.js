@@ -13,7 +13,7 @@ const sections = document.querySelectorAll(".section");
 const navbar = document.getElementById("nav-bar");
 const sticky = navbar.offsetTop;
 const observer = new IntersectionObserver(callback, {
-  threshold: 0.5,
+  threshold: 0.6,
   rootMargin: "0px",
 });
 
@@ -44,24 +44,23 @@ window.onscroll = function shiftNav() {
   }
 };
 
-openMenuBtn.addEventListener("click", () => {
-  document.body.classList.add("no-scroll");
-  menu.classList.add("active");
-});
-
-closeMenuBtn.addEventListener("click", () => {
-  closeMenu();
-});
+openMenuBtn.addEventListener("click", openMenu);
+closeMenuBtn.addEventListener("click", closeMenu);
 
 menuLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    closeMenu();
-  });
+  link.addEventListener("click", closeMenu);
 });
+
+function openMenu() {
+  document.body.classList.add("no-scroll");
+  menu.classList.add("active");
+  document.querySelector(".menu-links").classList.add("fade-down");
+}
 
 function closeMenu() {
   menu.classList.remove("active");
   document.body.classList.remove("no-scroll");
+  document.querySelector(".menu-links").classList.remove("fade-down");
 }
 
 // contact form
