@@ -93,11 +93,6 @@ footerIcon.addEventListener("click", () => {
   }, 4000);
 });
 
-// year
-const yearDiv = document.getElementById('year');
-const currentYear = new Date().getFullYear();
-yearDiv.textContent = currentYear
-
 // age
 const ageDiv = document.getElementById("age");
 const currentAge = new Date().getFullYear() - 2005;

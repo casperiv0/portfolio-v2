@@ -1,3 +1,13 @@
+.timeline-link {
+  position: relative;
+  text-decoration: none;
+  color: #bbbbbb;
+  transition: 0.3s;
+  position: relative;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+}
+
 .timeline-section {
   margin-top: 3rem;
 }
@@ -19,7 +29,7 @@
   top: 0;
   bottom: 0;
   width: 6px;
-  background: #44465C;
+  background: #44465c;
   left: 50%;
   margin-left: -3px;
 }
@@ -132,5 +142,11 @@
 
   .right {
     left: 0;
+  }
+}
+
+@media (hover: hover) {
+  .timeline-link:hover{
+    color: white;
   }
 }
