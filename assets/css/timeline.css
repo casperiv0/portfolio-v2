@@ -95,6 +95,7 @@
   padding: 20px;
   background: #232535;
   color: white;
+  font-size: 1.1rem;
 }
 
 .timeline-item-header {
@@ -107,11 +108,13 @@
 }
 
 .timeline-item-header p {
+  font-size: 1.2rem;
   color: #848892;
   font-weight: bold;
 }
 
 .timeline-item-header h4 {
+  font-size: 1rem;
   color: white;
   background-color: #44465c;
   padding: 5px;
