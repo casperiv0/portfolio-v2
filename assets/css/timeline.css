@@ -16,7 +16,6 @@
   margin: 0 auto;
   position: relative;
   max-width: 1200px;
-  max-height: 1200px;
 }
 
 .timeline::-webkit-scrollbar {
