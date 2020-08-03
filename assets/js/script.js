@@ -62,15 +62,6 @@ contactForm.addEventListener("submit", (e) => {
     });
 });
 
-// footer
-footerIcon.addEventListener("click", () => {
-  document.body.classList.add("rotate");
-
-  setTimeout(() => {
-    document.body.classList.remove("rotate");
-  }, 4000);
-});
-
 // age
 const ageDiv = document.getElementById("age");
 const currentAge = new Date().getFullYear() - 2005;
