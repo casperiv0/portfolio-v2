@@ -1,3 +1,30 @@
+#view-older {
+  display: none;
+}
+
+#view-older.active {
+  display: block;
+}
+
+.view-older-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -70px;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  padding: 10px;
+  color: #bbbbbb;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.view-older-btn.active > img {
+  transform: rotate(180deg);
+}
+
 .timeline-link {
   position: relative;
   text-decoration: none;
@@ -150,5 +177,8 @@
 @media (hover: hover) {
   .timeline-link:hover{
     color: white;
+  }
+  .view-older-btn:hover {
+    transform: translateX(-50%) scale(1.1);
   }
 }

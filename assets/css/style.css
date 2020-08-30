@@ -300,6 +300,7 @@ a {
   text-align: center;
   color: white;
   font-weight: bold;
+  transition: transform 0.3s;
 }
 
 .skill img {
@@ -507,6 +508,9 @@ a {
   }
   .scroll-down:hover {
     transform: translate(-50%, 2%) scale(1.2);
+  }
+  .skill:hover {
+    transform: scale(1.2);
   }
   .project .project-btn:hover {
     opacity: 0.9;
