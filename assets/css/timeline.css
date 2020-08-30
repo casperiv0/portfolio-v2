@@ -126,11 +126,14 @@
 
 .timeline-item-header {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
   color: white;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .timeline-item-header p {
@@ -139,7 +142,7 @@
   font-weight: bold;
 }
 
-.timeline-item-header h4 {
+.timeline-item-header h1 {
   font-size: 1rem;
   color: white;
   background-color: #44465c;
