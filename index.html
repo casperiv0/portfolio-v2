@@ -48,6 +48,8 @@
     />
     <link rel="apple-touch-icon" href="./assets/img/icons/icon-144.png" />
     <link rel="manifest" href="./assets/manifest.json" />
+
+    <!-- For contact form -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
@@ -75,7 +77,7 @@
 
     <div class="container">
       <div>
-        <nav id="nav-bar" class="nav-bar">
+        <nav id="nav-bar" class="nav-bar nav-down">
           <div class="nav-content">
             <div>
               <a href="#" class="nav-icon">
@@ -133,8 +135,11 @@
             </div>
           </div>
           <a href="#skills-section" class="scroll-down">
-            <p>Scroll Down</p>
-            <img src="./assets/img/arrow_down.svg" alt="Scroll down" />
+            <img
+              title="Scroll down"
+              src="./assets/img/arrow_down.svg"
+              alt="Scroll down"
+            />
           </a>
 
           <div class="socials">
@@ -158,47 +163,47 @@
         <section class="skills section" id="skills-section">
           <h1 class="section-title">My Backpack</h1>
           <div class="skills-container">
-            <div class="skill">
+            <div title="HTML" class="skill">
               <img src="./assets/img/skills/html5.svg" alt="html" />
               <p>HTML</p>
             </div>
-            <div class="skill">
+            <div title="CSS" class="skill">
               <img src="./assets/img/skills/css3.svg" alt="css" />
               <p>CSS</p>
             </div>
-            <div class="skill">
+            <div title="JavaScript" class="skill">
               <img src="./assets/img/skills/javascript.svg" alt="javascript" />
               <p>JavaScript</p>
             </div>
-            <div class="skill">
+            <div title="ReactJs" class="skill">
               <img src="./assets/img/skills/react.svg" alt="reactjs" />
               <p>ReactJs</p>
             </div>
-            <div class="skill">
+            <div title="BootStrap" class="skill">
               <img src="./assets/img/skills/bootstrap.svg" alt="bootstrap" />
               <p>BootStrap</p>
             </div>
-            <div class="skill">
+            <div title="NodeJS" class="skill">
               <img src="./assets/img/skills/nodejs.svg" alt="nodejs" />
               <p>NodeJS</p>
             </div>
-            <div class="skill">
+            <div title="databases" class="skill">
               <img src="./assets/img/skills/mongo-sql.svg" alt="nodejs" />
               <p>MongoDB & MySQL</p>
             </div>
-            <div class="skill">
+            <div title="NPM" class="skill">
               <img src="./assets/img/skills/npm.svg" alt="npm" />
               <p>NPM</p>
             </div>
-            <div class="skill">
+            <div title="Yarn" class="skill">
               <img src="./assets/img/skills/yarn.svg" alt="yarn" />
               <p>Yarn</p>
             </div>
-            <div class="skill">
+            <div title="Terminal" class="skill">
               <img src="./assets/img/skills/terminal.svg" alt="terminal" />
               <p>Terminal</p>
             </div>
-            <div class="skill">
+            <div title="Git - Github" class="skill">
               <img src="./assets/img/skills/git-github.svg" alt="github" />
               <p>Git & Github</p>
             </div>
@@ -612,6 +617,7 @@
       </div>
     </div>
 
+    <!-- For smooth scroll in safari -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll-min.js"

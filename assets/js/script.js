@@ -41,7 +41,6 @@ menuLinks.forEach((link) => {
 function openMenu() {
   document.body.classList.add("no-scroll");
   menu.classList.add("active");
-  document.querySelector(".menu-links").classList.add("fade-down");
 }
 
 function closeMenu() {

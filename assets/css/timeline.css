@@ -175,6 +175,9 @@
   .right {
     left: 0;
   }
+  .reverse {
+    flex-direction: row;
+  }
 }
 
 @media (hover: hover) {
