@@ -69,8 +69,45 @@ a {
   border-bottom: 2px solid #232535;
 }
 
-/* Menu */
+/* inner animation */
+.inner-animation {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #232535;
+
+  -webkit-animation: fadeOutInner 1s forwards;
+  animation: fadeOutInner 500ms forwards;
+  animation-delay: 700ms;
+}
+
+.inner-animation h1 {
+  color: white;
+  font-size: 10vw;
+  text-transform: uppercase;
+  background: #232535;
+  z-index: 2;
+}
+
+.inner-animation h3 {
+  position: absolute;
+  z-index: 1;
+  color: #bbbbbb;
+  font-size: 3vw;
+  font-weight: normal;
+  text-transform: uppercase;
+  animation: textDown 500ms forwards;
+}
+
+/* Menu */
 .menu {
   position: fixed;
   top: -100vh;
@@ -672,7 +709,6 @@ a {
 }
 
 /* Animations */
-
 @keyframes jump {
   0% {
     transform: scale(0) translateY(0);
@@ -721,5 +757,24 @@ a {
   100% {
     transform: translateY(-10px);
     -moz-transform: translateY(-10px);
+  }
+}
+
+@keyframes textDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(210%);
+  }
+}
+
+@keyframes fadeOutInner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    pointer-events: none;
+    opacity: 0;
   }
 }
