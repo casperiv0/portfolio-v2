@@ -87,6 +87,8 @@ a {
   -webkit-animation: fadeOutInner 1s forwards;
   animation: fadeOutInner 500ms forwards;
   animation-delay: 700ms;
+
+  pointer-events: none;
 }
 
 .inner-animation h1 {
@@ -772,6 +774,7 @@ a {
 @keyframes fadeOutInner {
   0% {
     opacity: 1;
+    pointer-events: none;
   }
   100% {
     pointer-events: none;
