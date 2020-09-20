@@ -16,7 +16,7 @@ const sticky = navbar.offsetTop;
 
 window.onscroll = function shiftNav() {
   if (window.pageYOffset > sticky) {
-    navbar.style.boxShadow = "0 2px 2px rgba(35,37,53,0.8)";
+    navbar.style.boxShadow = "0 0px 10px 0 rgba(0, 0, 0, 0.4)";
     navbar.style.height = "60px";
   } else {
     navbar.style.boxShadow = "none";
