@@ -373,6 +373,8 @@ a {
   height: 300px;
   padding: 20px;
   background-color: #232535;
+  transition: box-shadow 300ms ease;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .project h2 {
@@ -554,6 +556,9 @@ a {
   }
   .skill:hover {
     transform: scale(1.2);
+  }
+  .project:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   .project .project-btn:hover {
     opacity: 0.9;

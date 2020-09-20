@@ -50,7 +50,7 @@
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -68,7 +68,7 @@
 
 .timeline-item::after {
   z-index: 80;
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -13px;
@@ -92,7 +92,7 @@
 }
 
 .left::before {
-  content: '';
+  content: "";
   height: 0px;
   width: 0px;
   position: absolute;
@@ -105,7 +105,7 @@
 }
 
 .right::before {
-  content: '';
+  content: "";
   height: 0px;
   width: 0px;
   position: absolute;
@@ -118,10 +118,12 @@
 }
 
 .timeline-item-body {
+  transition: box-shadow 300ms ease;
   padding: 20px;
   background: #232535;
   color: white;
   font-size: 1.1rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .timeline-item-header {
@@ -181,7 +183,10 @@
 }
 
 @media (hover: hover) {
-  .timeline-link:hover{
+  .timeline-item-body:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .timeline-link:hover {
     color: white;
   }
   .view-older-btn:hover {
