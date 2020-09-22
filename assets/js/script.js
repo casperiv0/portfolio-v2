@@ -16,19 +16,17 @@ const sticky = navbar.offsetTop;
 
 window.onscroll = function shiftNav() {
   if (window.pageYOffset > sticky) {
-    navbar.style.boxShadow = "0 0px 10px 0 rgba(0, 0, 0, 0.4)";
-    navbar.style.height = "60px";
+    navbar.classList.add("active");
   } else {
-    navbar.style.boxShadow = "none";
-    navbar.style.height = "100px";
+    navbar.classList.remove("active");
   }
 };
 
 // Make sure all timeline-links open in a new tab
 timelineLinks.forEach((link) => {
   link.target = "_blank";
-  link.rel = "noreferrer noopener"
-})
+  link.rel = "noreferrer noopener";
+});
 
 openMenuBtn.addEventListener("click", openMenu);
 closeMenuBtn.addEventListener("click", closeMenu);
@@ -61,7 +59,6 @@ function updateTimeline() {
   }
 }
 
-
 // contact form
 const contactForm = document.getElementById("contact-form");
 
@@ -82,8 +79,3 @@ contactForm.addEventListener("submit", (e) => {
       }
     });
 });
-
-// age
-const ageDiv = document.getElementById("age");
-const currentAge = new Date().getFullYear() - 2005;
-ageDiv.textContent = currentAge;
