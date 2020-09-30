@@ -66,7 +66,6 @@ a {
   font-size: var(--section-title-fs);
   color: #bbbbbb;
   padding-bottom: 10px;
-  border-bottom: 2px solid #232535;
 }
 
 /* inner animation */
@@ -85,8 +84,8 @@ a {
   background: #232535;
 
   -webkit-animation: fadeOutInner 1s forwards;
-  animation: fadeOutInner 500ms forwards;
-  animation-delay: 700ms;
+  animation: fadeOutInner 1s forwards;
+  animation-delay: 1s;
 
   pointer-events: none;
 }
@@ -263,6 +262,7 @@ a {
   color: #bbbbbb;
   font-size: var(--main-p-fs);
   transition: font 0.3s;
+  margin-bottom: 0.5rem;
 }
 
 .main h1 {
@@ -272,7 +272,7 @@ a {
 }
 
 .main .btn-container {
-  margin-top: 20px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -657,7 +657,7 @@ a {
     --about-p-fs: 1.3rem;
   }
   .main .btn {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 10px 20px;
   }
 }
